@@ -1,6 +1,8 @@
 name: another workflow
 
-on: push
+on: 
+    - push
+    - workflow_dispatch
 
 jobs:
     greet_me:
@@ -11,6 +13,6 @@ jobs:
 
        
 
-     
+
 
     
