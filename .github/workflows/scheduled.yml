@@ -1,4 +1,4 @@
-name: scheduled job
+name: scheduled job should run
 
 on:
     schedule:
