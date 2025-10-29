@@ -1,0 +1,16 @@
+name: another workflow
+
+on: push
+
+jobs:
+    greet_me:
+        runs-on: ubuntu-latest
+        steps:
+            - name: show time
+              run: echo "Hello, the date is $(date)"
+
+       
+
+     
+
+    
