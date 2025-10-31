@@ -13,7 +13,7 @@ jobs:
       run: echo "This is a test greeting run at $(date)"
 
 
-    - name: goodbye
+    - name: run multiple commands
       run: |
         echo "Saying goodbye from ubuntu vm on $(date)"
         ls -la
