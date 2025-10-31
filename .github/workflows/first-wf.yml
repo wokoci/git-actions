@@ -12,12 +12,9 @@ jobs:
     - name: greet_me
       run: echo "This is a test greeting run at $(date)"
 
+
     - name: goodbye
-      run: echo "Saying goodbye from ubuntu vm on $(date)"
-
-    - name: list_files
-      run: ls -la
-
-    - name: display-html
-      run: cat ./index.html
-      
+      run: |
+        echo "Saying goodbye from ubuntu vm on $(date)"
+        ls -la
+        cat ./index.html
