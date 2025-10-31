@@ -1,0 +1,13 @@
+name: My First Workflow Run
+
+on: [push]
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: greet_me
+      run: echo "This is a test greeting run at $(date)"
+
+    - name: goodbye
+      run: echo "Saying goodbye from ubuntu vm on $(date)"
