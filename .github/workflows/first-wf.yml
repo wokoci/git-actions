@@ -18,3 +18,7 @@ jobs:
         echo "Saying goodbye from ubuntu vm on $(date)"
         ls -la
         cat ./index.html
+
+    - name: generate ascii conetent
+      run: cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt
+
