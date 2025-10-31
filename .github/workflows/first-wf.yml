@@ -11,3 +11,7 @@ jobs:
 
     - name: goodbye
       run: echo "Saying goodbye from ubuntu vm on $(date)"
+
+    - name: list_files
+      run: ls -la
+      
