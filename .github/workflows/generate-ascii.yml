@@ -20,7 +20,7 @@ jobs:
           run: ls -ltrha      
 
         - name: Test file exists
-          run: cat dragon.txt
+          run: grep "dragon" dragon.txt
 
         - name: Read file
           run:  cat dragon.txt
