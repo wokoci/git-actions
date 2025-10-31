@@ -16,11 +16,13 @@ jobs:
         - name: Execute cowsay  CMD
           run: cowsay -f dragon "Run for your life,  I am a dragon....RAWR" >> dragon.txt
 
+        - name: run workspace command
+          run: ls -ltrha      
+
         - name: Test file exists
           run: grep -i "dragon.txt"
 
         - name: Read file
           run:  cat dragon.txt
 
-        - name: checkout file
-          run: ls -la
+                                                                                     
