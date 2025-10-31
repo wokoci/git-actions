@@ -19,6 +19,9 @@ jobs:
         ls -la
         cat ./index.html
 
-    - name: generate ascii conetent
-      run: sudo apt-get install cowsay -y && cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt
+    - name: install cowsay
+      run: sudo apt-get install cowsay -y 
+
+    - name: generate ascii content
+      run: cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt
 
