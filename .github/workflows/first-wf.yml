@@ -6,6 +6,9 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
+    - name: checkout-repo
+      uses: action checkout@v5
+
     - name: greet_me
       run: echo "This is a test greeting run at $(date)"
 
@@ -14,4 +17,7 @@ jobs:
 
     - name: list_files
       run: ls -la
+
+    - name: display-html
+      run: cat ./index.html
       
